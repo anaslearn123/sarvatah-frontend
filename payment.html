@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>Enroll & Pay - Sarvatah</title>
+<link rel="canonical" href="https://www.sarvatah.in/payment.html">
+<meta name="description" content="Enroll and complete your course payment securely with Sarvatah.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#004AC6">
+<meta property="og:title" content="Enroll & Pay - Sarvatah">
+<meta property="og:description" content="Enroll and complete your course payment securely with Sarvatah.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.sarvatah.in/payment.html">
+<meta property="og:image" content="https://www.sarvatah.in/opengraph.jpg">
+<meta property="og:site_name" content="Sarvatah">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Enroll & Pay - Sarvatah">
+<meta name="twitter:description" content="Enroll and complete your course payment securely with Sarvatah.">
+<meta name="twitter:site" content="@sarvatah5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:hidden;max-width:100vw}
+body{font-family:'Inter',sans-serif;color:#121C28;background:#F9FAFF;min-height:100vh}
+.navbar{background:#fff;border-bottom:1px solid #E5E7EB;padding:0 80px}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:80px}
+.logo{display:flex;align-items:center}
+.btn-nav{background:#004AC6;color:#fff;padding:10px 22px;border-radius:8px;font-size:15px;font-weight:500}
+.step{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;font-size:15px;font-weight:700;flex-shrink:0}
+.step.done{background:#004AC6;color:#fff}
+.step.active{background:#004AC6;color:#fff;box-shadow:0 0 0 4px rgba(0,74,198,.15)}
+.step.todo{background:#E5E7EB;color:#9CA3AF}
+.divider-line{height:2px;flex:1;background:#E5E7EB;margin:0 8px}
+.divider-line.done{background:#004AC6}
+input,select{width:100%;padding:12px 14px;border:1px solid #E5E7EB;border-radius:8px;font-size:15px;font-family:Inter,sans-serif;outline:none;transition:border .2s}
+input:focus,select:focus{border-color:#004AC6}
+.btn-primary{background:#004AC6;color:#fff;padding:14px 28px;border-radius:10px;font-size:16px;font-weight:600;border:none;cursor:pointer;width:100%;transition:background .2s}
+.btn-primary:hover{background:#0039a6}
+.btn-primary:disabled{background:#9CA3AF;cursor:not-allowed}
+@media(max-width:1024px){
+  .navbar{padding:0 20px !important}
+  .wrap{padding:24px 16px !important}
+  .inner{flex-direction:column !important}
+}
+</style>
+</head>
+<body>
+<nav class="navbar"><div class="nav-inner"><a href="about.html" class="logo" style="display:flex;align-items:center;gap:10px;text-decoration:none"><img src="sarvatah-logo.png" alt="Sarvatah" style="height:60px;width:auto;display:block"></a><a href="courses.html" class="btn-nav">Back to Courses</a></div></nav>
+
+<div class="wrap" style="max-width:1100px;margin:0 auto;padding:40px 24px">
+  <div class="inner" style="display:flex;gap:32px;align-items:flex-start">
+
+    <!-- Left: Form -->
+    <div style="flex:1;background:#fff;border-radius:16px;border:1px solid #E5E7EB;padding:36px">
+      <!-- Steps -->
+      <div style="display:flex;align-items:center;margin-bottom:36px">
+        <div class="step done" id="s1">1</div>
+        <div class="divider-line done" id="d1"></div>
+        <div class="step todo" id="s2">2</div>
+        <div class="divider-line" id="d2"></div>
+        <div class="step todo" id="s3">✓</div>
+      </div>
+      <div style="display:flex;justify-content:space-between;margin-bottom:36px;font-size:13px;color:#6B7280">
+        <span>Your Details</span><span>Payment</span><span>Confirmed</span>
+      </div>
+
+      <!-- Step 1: Details -->
+      <div id="step1">
+        <h2 style="font-size:22px;font-weight:700;margin-bottom:6px">Your Details</h2>
+        <p style="color:#6B7280;font-size:14px;margin-bottom:24px">Please fill in your information to proceed to payment.</p>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div><label style="display:block;font-size:14px;font-weight:500;margin-bottom:6px">Full Name *</label><input id="fname" placeholder="e.g. Rahul Sharma" required></div>
+          <div><label style="display:block;font-size:14px;font-weight:500;margin-bottom:6px">Email Address *</label><input id="femail" type="email" placeholder="rahul@example.com" required></div>
+          <div><label style="display:block;font-size:14px;font-weight:500;margin-bottom:6px">Phone Number *</label><input id="fphone" placeholder="+91 98765 43210" required></div>
+          <div><label style="display:block;font-size:14px;font-weight:500;margin-bottom:6px">Highest Qualification</label><select id="fqual"><option value="">Select...</option><option>10th Pass</option><option>12th Pass</option><option>Undergraduate (Pursuing)</option><option>Graduate</option><option>Post-Graduate</option><option>Working Professional</option></select></div>
+          <div id="errMsg" style="display:none;color:#DC2626;font-size:13px;background:#FEF2F2;padding:10px 14px;border-radius:8px"></div>
+          <button class="btn-primary" id="proceedBtn" onclick="proceedToPayment()">Proceed to Payment →</button>
+        </div>
+      </div>
+
+      <!-- Step 2: Payment -->
+      <div id="step2" style="display:none">
+        <h2 style="font-size:22px;font-weight:700;margin-bottom:6px">Complete Payment</h2>
+        <p style="color:#6B7280;font-size:14px;margin-bottom:24px">Confirm your enrollment — our team will reach out to collect payment and share next steps.</p>
+        <div style="background:#F9FAFF;border-radius:12px;padding:20px;margin-bottom:24px">
+          <div style="font-size:15px;font-weight:600;margin-bottom:14px">Order Summary</div>
+          <div style="display:flex;justify-content:space-between;font-size:14px;color:#434655;margin-bottom:8px"><span id="pay-course-name">Course</span><span id="pay-plan-name" style="color:#6B7280"></span></div>
+          <div style="display:flex;justify-content:space-between;font-size:14px;color:#434655;margin-bottom:8px"><span>Student Name</span><span id="pay-name" style="font-weight:500"></span></div>
+          <div style="height:1px;background:#E5E7EB;margin:12px 0"></div>
+          <div style="display:flex;justify-content:space-between;font-size:17px;font-weight:700"><span>Total Amount</span><span style="color:#004AC6" id="pay-amount">₹0</span></div>
+        </div>
+        <button class="btn-primary" id="payBtn" onclick="initiatePayment()">Confirm Enrollment</button>
+        <button onclick="showStep(1)" style="width:100%;background:none;border:1px solid #E5E7EB;color:#434655;padding:12px;border-radius:10px;font-size:14px;cursor:pointer;margin-top:12px">← Go Back</button>
+        <div id="payErr" style="display:none;color:#DC2626;font-size:13px;background:#FEF2F2;padding:10px 14px;border-radius:8px;margin-top:12px"></div>
+      </div>
+
+      <!-- Step 3: Success -->
+      <div id="step3" style="display:none;text-align:center;padding:20px 0">
+        <div style="width:80px;height:80px;background:#D1FAE5;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:36px">✅</div>
+        <h2 style="font-size:24px;font-weight:800;margin-bottom:10px">Enrollment Confirmed!</h2>
+        <p style="color:#6B7280;font-size:15px;line-height:24px;margin-bottom:8px">Thank you for enrolling at Sarvatah. Our team will contact you within 24 hours with batch details and study materials.</p>
+        <p id="pay-id" style="color:#9CA3AF;font-size:12px;margin-bottom:28px"></p>
+        <a href="courses.html" style="display:inline-block;background:#004AC6;color:#fff;padding:13px 32px;border-radius:10px;font-weight:600;font-size:15px">Explore More Courses</a>
+      </div>
+    </div>
+
+    <!-- Right: Course info card -->
+    <div style="width:300px;flex-shrink:0" id="rightCard">
+      <div style="background:#fff;border:1px solid #E5E7EB;border-radius:16px;overflow:hidden;margin-bottom:16px">
+        <div style="height:160px;overflow:hidden;position:relative">
+          <img id="courseImg" src="hero-section.webp" alt="" style="width:100%;height:100%;object-fit:cover">
+          <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent,rgba(0,0,0,.5))"></div>
+          <span id="courseCategory" style="position:absolute;bottom:12px;left:12px;background:#004AC6;color:#fff;font-size:11px;font-weight:700;padding:3px 12px;border-radius:100px">Course</span>
+        </div>
+        <div style="padding:20px">
+          <h3 id="courseTitle" style="font-size:17px;font-weight:700;margin-bottom:6px">Course Name</h3>
+          <p id="courseDuration" style="font-size:13px;color:#6B7280;margin-bottom:14px">Duration</p>
+          <div style="height:1px;background:#F3F4F6;margin-bottom:14px"></div>
+          <div id="planInfo" style="font-size:14px;color:#434655;margin-bottom:4px"></div>
+          <div id="planAmount" style="font-size:26px;font-weight:800;color:#004AC6;margin-top:4px"></div>
+        </div>
+      </div>
+      <div style="background:#E8F0FE;border-radius:12px;padding:16px">
+        <div style="font-size:13px;font-weight:600;margin-bottom:10px;color:#004AC6">✅ What's Included</div>
+        <div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:#434655">
+          <div>• Expert-led live sessions</div>
+          <div>• Recorded lectures</div>
+          <div>• Hands-on projects</div>
+          <div>• Placement assistance</div>
+          <div>• Certificate of completion</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script>
+var courseData = {};
+var userData = {};
+
+(function init() {
+  var p = new URLSearchParams(window.location.search);
+  var course = p.get('course') || '';
+  var plan = p.get('plan') || 'full';
+  var amount = parseFloat(p.get('amount') || '0');
+
+  var courses = {
+    'uiux':       {title:'UI/UX Design',      duration:'6 Months', category:'Creative Arts',   imgId:'preload-ux'},
+    'data-analyst':{title:'Data Analytics',   duration:'3 Months', category:'Data Analytics',  imgId:'preload-data-analyst'},
+    'data-science':{title:'Data Science',     duration:'5 Months', category:'Data Science',    imgId:'preload-data-science'},
+    'ai-ml':      {title:'AI & ML',           duration:'6 Months', category:'Engineering',     imgId:'preload-ai'},
+    'fullstack-web':{title:'Full Stack Web',  duration:'6 Months', category:'Development',     imgId:'preload-fullstack-web'},
+    'fullstack-ds':{title:'Full Stack DS',    duration:'6 Months', category:'Data Science',    imgId:'preload-fullstack-ds'},
+  };
+  var info = courses[course] || {title: course || 'Course', duration: '', category: 'Course', imgId: 'preload-hero'};
+
+  courseData = { course, plan, amount, courseName: info.title };
+
+  document.getElementById('courseTitle').textContent = info.title;
+  document.getElementById('courseDuration').textContent = info.duration ? '⏱ ' + info.duration : '';
+  document.getElementById('courseCategory').textContent = info.category;
+  document.getElementById('courseImg').src = document.getElementById(info.imgId).src;
+  document.getElementById('planInfo').textContent = plan === 'emi' ? 'EMI Plan' : plan === 'early' ? 'Early Bird Plan' : 'Full Payment Plan';
+  document.getElementById('planAmount').textContent = amount ? '₹' + amount.toLocaleString('en-IN') : '';
+  document.getElementById('pay-course-name').textContent = info.title;
+  document.getElementById('pay-plan-name').textContent = plan === 'emi' ? '(EMI)' : plan === 'early' ? '(Early Bird)' : '(Full)';
+  document.getElementById('pay-amount').textContent = amount ? '₹' + amount.toLocaleString('en-IN') : '—';
+})();
+
+function showStep(n) {
+  document.getElementById('step1').style.display = n===1 ? 'block' : 'none';
+  document.getElementById('step2').style.display = n===2 ? 'block' : 'none';
+  document.getElementById('step3').style.display = n===3 ? 'block' : 'none';
+  var s1=document.getElementById('s1'), s2=document.getElementById('s2'), s3=document.getElementById('s3');
+  var d1=document.getElementById('d1'), d2=document.getElementById('d2');
+  if(n===1){s1.className='step active';s2.className='step todo';s3.className='step todo';d1.className='divider-line';d2.className='divider-line';}
+  if(n===2){s1.className='step done';s2.className='step active';s3.className='step todo';d1.className='divider-line done';d2.className='divider-line';}
+  if(n===3){s1.className='step done';s2.className='step done';s3.className='step done';d1.className='divider-line done';d2.className='divider-line done';document.getElementById('rightCard').style.display='none';}
+}
+
+function showError(id, msg) {
+  var el = document.getElementById(id);
+  el.textContent = msg;
+  el.style.display = 'block';
+}
+
+function proceedToPayment() {
+  var name = document.getElementById('fname').value.trim();
+  var email = document.getElementById('femail').value.trim();
+  var phone = document.getElementById('fphone').value.trim();
+  document.getElementById('errMsg').style.display = 'none';
+  if (!name) { showError('errMsg', 'Please enter your full name.'); return; }
+  if (!email || !email.includes('@')) { showError('errMsg', 'Please enter a valid email address.'); return; }
+  if (!phone || phone.length < 8) { showError('errMsg', 'Please enter a valid phone number.'); return; }
+  userData = { name, email, phone, qualification: document.getElementById('fqual').value };
+  document.getElementById('pay-name').textContent = name;
+  showStep(2);
+}
+
+async function initiatePayment() {
+  // No payment gateway is configured yet — this saves the enrollment
+  // directly (paymentStatus: "pending") so the team can follow up and
+  // collect payment manually (call/WhatsApp/bank transfer).
+  var btn = document.getElementById('payBtn');
+  btn.disabled = true;
+  btn.textContent = 'Saving...';
+  document.getElementById('payErr').style.display = 'none';
+
+  try {
+    var r = await fetch(API_BASE + '/api/enrollment', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        fullName: userData.name,
+        email: userData.email,
+        phone: userData.phone,
+        courseName: courseData.courseName,
+        planType: courseData.plan,
+        amount: courseData.amount,
+        paymentStatus: 'pending'
+      })
+    });
+    var data = await r.json();
+
+    if (!r.ok) {
+      showError('payErr', data.error || 'Something went wrong. Please contact us on WhatsApp.');
+      btn.disabled = false;
+      btn.textContent = 'Confirm Enrollment';
+      return;
+    }
+
+    document.getElementById('pay-id').textContent = 'Enrollment ID: ' + data.id;
+    showStep(3);
+  } catch (err) {
+    showError('payErr', 'Network error. Please try again or contact us on WhatsApp.');
+    btn.disabled = false;
+    btn.textContent = 'Confirm Enrollment';
+  }
+}
+</script>
+<script>
+(function(){try{fetch(API_BASE+'/api/page-visit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({page:'payment',referrer:document.referrer||''})}).catch(function(){});}catch(e){}}());
+</script>
+<script src="common.js"></script>
+<script src="https://replit-cdn.com/replit-pill/replit-pill.global.js" data-referral-code="lby10ilo8uo1" data-repl-id="6791fa2a-eb92-451a-84a4-e55b75acdc6f"></script></body>
+</html>
