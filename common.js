@@ -88,7 +88,7 @@
       banner.id = 'cookie-banner';
       banner.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#1e293b;color:#e2e8f0;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:14px;z-index:99999;flex-wrap:wrap;box-shadow:0 -4px 24px rgba(0,0,0,.3);font-family:Inter,sans-serif;font-size:14px';
       banner.innerHTML =
-        '<span>🍪 Hum cookies use karte hain — experience better banane ke liye.</span>' +
+        '<span>🍪  We use cookies to improve your browsing experience..</span>' +
         '<div style="display:flex;gap:10px;flex-shrink:0">' +
         '<button id="cookie-accept" style="background:#004AC6;color:#fff;padding:8px 20px;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:Inter,sans-serif">Accept</button>' +
         '<button id="cookie-decline" style="background:rgba(255,255,255,.1);color:#e2e8f0;padding:8px 16px;border:1px solid rgba(255,255,255,.2);border-radius:8px;font-size:13px;cursor:pointer;font-family:Inter,sans-serif">Decline</button>' +
